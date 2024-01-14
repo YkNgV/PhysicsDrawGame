@@ -12,32 +12,45 @@ public class NewLevelManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
 
-        if (PlayerPrefs.HasKey("Level"))
+        if (SceneManager.GetActiveScene().name == "Level Select")
         {
-          
+           
 
-            for (int i = 0; i < PlayerPrefs.GetInt("Level"); i++) 
+
+            if (PlayerPrefs.HasKey("Level"))
             {
-                button[i].interactable = true;
-                Debug.Log(i);
+
+
+                Debug.Log("Lvl Select Active");
+
+                for (int i = 0; i < PlayerPrefs.GetInt("Level"); i++)
+                {
+                    button[i].interactable = true;
+                    Debug.Log(i);
+                }
+
+                for (int i = 0; i < PlayerPrefs.GetInt("Level") + 1; i++) //removed lock image based on unlocked level
+                {
+                    button[i].GetComponent<LevelSelector>().lockImage[0].SetActive(false); //locked
+                    button[i].GetComponent<LevelSelector>().lockImage[1].SetActive(true);  //unlocked
+                }
             }
-
-            for (int i = 0; i < PlayerPrefs.GetInt("Level") + 1; i++) //removed lock image based on unlocked level
+            else
             {
-                button[i].GetComponent<LevelSelector>().lockImage[0].SetActive(false); //locked
-                button[i].GetComponent<LevelSelector>().lockImage[1].SetActive(true);  //unlocked
+                for (int i = unlockedLevel + 1; i < button.Length; i++) //if theres no prefab for level aka new game, set all locked
+                {
+                    button[i].interactable = false;
+                    button[i].GetComponent<LevelSelector>().lockImage[0].SetActive(true);
+                    button[i].GetComponent<LevelSelector>().lockImage[1].SetActive(false);
+                }
             }
         }
         else
         {
-            for (int i = unlockedLevel + 1; i < button.Length; i++) //if theres no prefab for level aka new game, set all locked
-            {
-                button[i].interactable = false;
-                button[i].GetComponent<LevelSelector>().lockImage[0].SetActive(true);
-                button[i].GetComponent<LevelSelector>().lockImage[1].SetActive(false);
-            }
+            Debug.Log("returning");
+            return;
+
         }
     }
 
@@ -47,14 +60,24 @@ public class NewLevelManager : MonoBehaviour
 
         unlockedLevel = PlayerPrefs.GetInt("Level");
 
-        if (unlockedLevel < button.Length)
+        if (SceneManager.GetActiveScene().name == "Level Select")
         {
-            for (int i = 0; i <= unlockedLevel; i++)
+            if (unlockedLevel < button.Length)
             {
-                button[i].interactable = true;
+                for (int i = 0; i <= unlockedLevel; i++)
+                {
+                    button[i].interactable = true;
+                }
             }
         }
+            
 
+    }
+
+
+    public void RestartLvl()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void ClearData()
