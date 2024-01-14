@@ -6,12 +6,16 @@ using UnityEngine.SceneManagement;
 
 public class NewLevelManager : MonoBehaviour
 {
+    //public GameObject starUI;
     public Button[] button;
+    
     public int unlockedLevel;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        //starUI.SetActive(false);
 
         if (SceneManager.GetActiveScene().name == "Level Select")
         {
