@@ -5,6 +5,10 @@ using System.Collections.Generic;
 public enum ColliderTypeChoice {PolygonCollider, EdgeCollider}
 
 public class DrawingManager : MonoBehaviour {
+
+	public int drawCount;
+
+
 	private LineRenderer pathLineRenderer;
 	private EdgeCollider2D pathEdgeCollider;
 	private PolygonCollider2D pathPolygonCollider;
@@ -56,6 +60,8 @@ public class DrawingManager : MonoBehaviour {
 	/// Variables are initalized and set here
 	/// </summary>   
 	void Start() {
+		drawCount = 0;
+
 		cloneNumber = 1;
 		verticesDistance = 0.2f;
 		lifeTime = 2f;
@@ -80,6 +86,7 @@ public class DrawingManager : MonoBehaviour {
 	void Update() {
 		if(Input.GetMouseButtonDown(0)) {
 			GeneratePath();
+			//drawCount++;
 		}
 
 		if(Input.GetMouseButton(0)) {
@@ -87,6 +94,9 @@ public class DrawingManager : MonoBehaviour {
 		}
 
 		if(Input.GetMouseButtonUp(0)) {
+
+			drawCount++; // FOR ACHIEVEMENT MANAGER
+
 			centerOfMassCount = 0;
 			centerOfMass = Vector2.zero;
 			

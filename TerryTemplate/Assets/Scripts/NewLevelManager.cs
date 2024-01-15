@@ -8,14 +8,22 @@ public class NewLevelManager : MonoBehaviour
 {
     //public GameObject starUI;
     public Button[] button;
-    
+
+    public GameObject restartButton;
+    public GameObject timeButton;
+
     public int unlockedLevel;
 
+    DrawingManager drawManager;
+    public Text drawCountText;
+
+    public bool inGame;
 
     // Start is called before the first frame update
     void Start()
     {
         //starUI.SetActive(false);
+        drawManager = FindObjectOfType<DrawingManager>();
 
         if (SceneManager.GetActiveScene().name == "Level Select")
         {
@@ -61,6 +69,11 @@ public class NewLevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (inGame)
+        {
+            drawCountText.text = "Line Count: " + drawManager.drawCount.ToString();  //sets draw count in UI
+        }
+        
 
         unlockedLevel = PlayerPrefs.GetInt("Level");
 

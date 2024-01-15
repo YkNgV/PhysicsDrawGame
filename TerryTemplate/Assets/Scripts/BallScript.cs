@@ -5,10 +5,12 @@ using UnityEngine;
 public class BallScript : MonoBehaviour
 {
     Rigidbody2D rb;
+    public NewAchievementManager achievement;
 
     // Start is called before the first frame update
     void Start()
     {
+        achievement = FindObjectOfType<NewAchievementManager>();
         rb = GetComponent<Rigidbody2D>();
         rb.isKinematic = true;
     }
@@ -27,9 +29,19 @@ public class BallScript : MonoBehaviour
             rb.isKinematic = false;
         }
 
-        if(collision.gameObject.name == "Win Condition")
-        {
+        //if(collision.gameObject.name == "Win Condition")
+        //{
+        //    Debug.Log("win detected");
+        //    achievement.LevelCleared();
+        //}
+    }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == "Win Condition")
+        {
+            Debug.Log("win detected");
+            achievement.LevelCleared();
         }
     }
 }

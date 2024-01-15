@@ -49,6 +49,10 @@ MonoBehaviour:
   stars: {fileID: 0}
   winText: {fileID: 0}
   starUi: {fileID: 0}
+  currentLevel: 1
+  oneStar: 5
+  twoStar: 3
+  threeStar: 1
 --- !u!114 &7371543129572351696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82,4 +86,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  restartButton: {fileID: 0}
+  timeButton: {fileID: 0}
   unlockedLevel: 0
+  drawCountText: {fileID: 0}
+  inGame: 1

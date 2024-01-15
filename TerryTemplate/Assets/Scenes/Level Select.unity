@@ -3478,6 +3478,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7371543129572351697, guid: 874b6c2a58438dc44b1803e1663fd01d,
         type: 3}
+      propertyPath: inGame
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371543129572351697, guid: 874b6c2a58438dc44b1803e1663fd01d,
+        type: 3}
       propertyPath: button.Array.data[0]
       value: 
       objectReference: {fileID: 1688153036}
