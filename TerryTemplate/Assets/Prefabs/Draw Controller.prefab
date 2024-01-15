@@ -55,7 +55,7 @@ MonoBehaviour:
   widthEnd: 0.2
   verticesDistance: 0.2
   fixedPosition: 1
-  isPermanent: 0
+  isPermanent: 1
   lifeTime: 2
   colliderType: 0
   showMassCenter: 1

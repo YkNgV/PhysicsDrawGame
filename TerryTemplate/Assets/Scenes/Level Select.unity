@@ -552,6 +552,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6283804546470127962, guid: 92a3d9336eaac0243bd2364b7c9d11a6,
+        type: 3}
+      propertyPath: m_Colors.m_FadeDuration
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 6283804546470127963, guid: 92a3d9336eaac0243bd2364b7c9d11a6,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1838,7 +1843,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6b4369424d6c24c4b89fdc702cded1a7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 93a995387e577c54d93512521e0c2171, type: 3}
   m_Type: 2
   m_PreserveAspect: 0
   m_FillCenter: 1
