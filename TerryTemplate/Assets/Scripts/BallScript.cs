@@ -26,5 +26,10 @@ public class BallScript : MonoBehaviour
         {
             rb.isKinematic = false;
         }
+
+        if(collision.gameObject.name == "Win Condition")
+        {
+
+        }
     }
 }
