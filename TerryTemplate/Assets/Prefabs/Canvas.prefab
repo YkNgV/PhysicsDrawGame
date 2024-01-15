@@ -1412,8 +1412,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Make the ball hit the floor \n(Ball moves once an object touches it, Click
-    and Drag to draw on screen)"
+  m_Text: 'make
+
+'
 --- !u!1 &8193110208582316499
 GameObject:
   m_ObjectHideFlags: 0

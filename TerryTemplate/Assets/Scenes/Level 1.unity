@@ -525,7 +525,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 9139468584859558773}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -646,7 +647,7 @@ PrefabInstance:
     - target: {fileID: 628810725551895034, guid: 29acbd06473144b4b8e84f2e00d85cde,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 628810725551895034, guid: 29acbd06473144b4b8e84f2e00d85cde,
         type: 3}
@@ -707,6 +708,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1402999966319598175, guid: a7e351469d7acff4488235c1be0e8c96,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 73.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 3949850426873474765, guid: a7e351469d7acff4488235c1be0e8c96,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -27.599976
+      objectReference: {fileID: 0}
+    - target: {fileID: 4641394904721308131, guid: a7e351469d7acff4488235c1be0e8c96,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Make the ball touch the floor
+
+        (ball starts moving once it
+        touches a drawn object)
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4641394904721308131, guid: a7e351469d7acff4488235c1be0e8c96,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 17
+      objectReference: {fileID: 0}
     - target: {fileID: 6278974944213135534, guid: a7e351469d7acff4488235c1be0e8c96,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -839,7 +865,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 2092877037}
     m_Modifications:
     - target: {fileID: 229141123482556484, guid: 5d2de32f7e6da5f479162cc633c1165b,
         type: 3}
@@ -849,22 +875,22 @@ PrefabInstance:
     - target: {fileID: 6195874254808526313, guid: 5d2de32f7e6da5f479162cc633c1165b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6195874254808526313, guid: 5d2de32f7e6da5f479162cc633c1165b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.31
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6195874254808526313, guid: 5d2de32f7e6da5f479162cc633c1165b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.82
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6195874254808526313, guid: 5d2de32f7e6da5f479162cc633c1165b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.764815
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6195874254808526313, guid: 5d2de32f7e6da5f479162cc633c1165b,
         type: 3}
@@ -901,5 +927,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6195874254808526313, guid: 5d2de32f7e6da5f479162cc633c1165b,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d2de32f7e6da5f479162cc633c1165b, type: 3}
+--- !u!4 &9139468584859558773 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6195874254808526313, guid: 5d2de32f7e6da5f479162cc633c1165b,
+    type: 3}
+  m_PrefabInstance: {fileID: 9139468584859558772}
+  m_PrefabAsset: {fileID: 0}

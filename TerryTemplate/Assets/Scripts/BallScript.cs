@@ -29,11 +29,12 @@ public class BallScript : MonoBehaviour
             rb.isKinematic = false;
         }
 
-        //if(collision.gameObject.name == "Win Condition")
+       // if(collision.gameObject.name == "Win Condition")
         //{
-        //    Debug.Log("win detected");
-        //    achievement.LevelCleared();
-        //}
+         //   Debug.Log("win detected");
+          //  achievement.LevelCleared();
+       // }
+       
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
