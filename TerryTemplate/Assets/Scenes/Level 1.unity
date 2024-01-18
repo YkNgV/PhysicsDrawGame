@@ -199,6 +199,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc980582369eeb342bb5c81743aaebcc, type: 3}
+--- !u!1 &99111283 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 149059137422771145, guid: a7e351469d7acff4488235c1be0e8c96,
+    type: 3}
+  m_PrefabInstance: {fileID: 6278974943702205094}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &138528881 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7908318303921682276, guid: a7e351469d7acff4488235c1be0e8c96,
@@ -422,6 +428,11 @@ PrefabInstance:
       propertyPath: drawCountText
       value: 
       objectReference: {fileID: 138528881}
+    - target: {fileID: 7371543129572351697, guid: 874b6c2a58438dc44b1803e1663fd01d,
+        type: 3}
+      propertyPath: nextLvlButton
+      value: 
+      objectReference: {fileID: 99111283}
     - target: {fileID: 7371543129572351697, guid: 874b6c2a58438dc44b1803e1663fd01d,
         type: 3}
       propertyPath: restartButton
@@ -852,6 +863,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6976377796783524627, guid: a7e351469d7acff4488235c1be0e8c96,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1963037966}
+    - target: {fileID: 6976377796783524627, guid: a7e351469d7acff4488235c1be0e8c96,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NextLvl
+      objectReference: {fileID: 0}
+    - target: {fileID: 6976377796783524627, guid: a7e351469d7acff4488235c1be0e8c96,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: NewLevelManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6976377796783524627, guid: a7e351469d7acff4488235c1be0e8c96,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8527475897805121679, guid: a7e351469d7acff4488235c1be0e8c96,
         type: 3}

@@ -11,10 +11,13 @@ public class NewLevelManager : MonoBehaviour
 
     public GameObject restartButton;
     public GameObject timeButton;
+    public GameObject nextLvlButton;
+
 
     public int unlockedLevel;
 
     DrawingManager drawManager;
+    NewAchievementManager achieveManager;
     public Text drawCountText;
 
     public bool inGame;
@@ -24,6 +27,7 @@ public class NewLevelManager : MonoBehaviour
     {
         //starUI.SetActive(false);
         drawManager = FindObjectOfType<DrawingManager>();
+        achieveManager = GetComponent<NewAchievementManager>();
 
         if (SceneManager.GetActiveScene().name == "Level Select")
         {
@@ -99,7 +103,9 @@ public class NewLevelManager : MonoBehaviour
 
     public void NextLvl()
     {
-        SceneManager.LoadScene()
+        int nextLevelInt = achieveManager.currentLevel + 1;
+        Debug.Log(nextLevelInt);
+        SceneManager.LoadScene("Level "+ nextLevelInt);
     }
 
     public void ClearData()

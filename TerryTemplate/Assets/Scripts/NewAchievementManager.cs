@@ -21,11 +21,13 @@ public class NewAchievementManager : MonoBehaviour
     DrawingManager drawManager;
 
     private void Start()
-    {
-        winText.SetActive(false);
-        starUi.SetActive(false);
+    {   
         lvlManager = GetComponent<NewLevelManager>();
         drawManager = FindObjectOfType<DrawingManager>();
+        winText.SetActive(false);
+        starUi.SetActive(false);
+        lvlManager.nextLvlButton.SetActive(false);
+       
     }
 
     public void LevelCleared()
@@ -53,12 +55,13 @@ public class NewAchievementManager : MonoBehaviour
         //Player.reward = Random.Range(0, 4); // Minimum value is inclusive while maximum value is exclusive for integer data type
         winText.SetActive(true);
         starUi.SetActive(true);
+        lvlManager.nextLvlButton.SetActive(true);
 
         lvlManager.restartButton.gameObject.SetActive(false);
         lvlManager.timeButton.gameObject.SetActive(false);
         stars.text = reward.ToString(); 
         
-        Debug.Log(reward);
+        //Debug.Log(reward); 
         if (currentLevel == lvlManager.unlockedLevel + 1 && lvlManager.unlockedLevel < 8) lvlManager.unlockedLevel++; // ensures cant spam 1 level over and over
         //if (lvlManager.unlockedLevel < 8) lvlManager.unlockedLevel++;
 
