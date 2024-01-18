@@ -97,6 +97,11 @@ public class NewLevelManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    public void NextLvl()
+    {
+        SceneManager.LoadScene()
+    }
+
     public void ClearData()
     {
         PlayerPrefs.DeleteAll();
