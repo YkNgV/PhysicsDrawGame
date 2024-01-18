@@ -438,6 +438,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7371543129572351697, guid: 874b6c2a58438dc44b1803e1663fd01d,
+        type: 3}
+      propertyPath: timeButton
+      value: 
+      objectReference: {fileID: 6278974943702205098}
+    - target: {fileID: 7371543129572351697, guid: 874b6c2a58438dc44b1803e1663fd01d,
+        type: 3}
+      propertyPath: drawCountText
+      value: 
+      objectReference: {fileID: 6278974943702205097}
+    - target: {fileID: 7371543129572351697, guid: 874b6c2a58438dc44b1803e1663fd01d,
+        type: 3}
+      propertyPath: restartButton
+      value: 
+      objectReference: {fileID: 6278974943702205099}
     - target: {fileID: 7371543129572351698, guid: 874b6c2a58438dc44b1803e1663fd01d,
         type: 3}
       propertyPath: stars
@@ -453,6 +468,11 @@ PrefabInstance:
       propertyPath: winText
       value: 
       objectReference: {fileID: 6278974943702205096}
+    - target: {fileID: 7371543129572351698, guid: 874b6c2a58438dc44b1803e1663fd01d,
+        type: 3}
+      propertyPath: currentLevel
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 874b6c2a58438dc44b1803e1663fd01d, type: 3}
 --- !u!1 &2092877034
@@ -748,6 +768,30 @@ GameObject:
 --- !u!1 &6278974943702205096 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2163396857861399548, guid: a7e351469d7acff4488235c1be0e8c96,
+    type: 3}
+  m_PrefabInstance: {fileID: 6278974943702205094}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6278974943702205097 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7908318303921682276, guid: a7e351469d7acff4488235c1be0e8c96,
+    type: 3}
+  m_PrefabInstance: {fileID: 6278974943702205094}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &6278974943702205098 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6243446913529978952, guid: a7e351469d7acff4488235c1be0e8c96,
+    type: 3}
+  m_PrefabInstance: {fileID: 6278974943702205094}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6278974943702205099 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4896993343207553008, guid: a7e351469d7acff4488235c1be0e8c96,
     type: 3}
   m_PrefabInstance: {fileID: 6278974943702205094}
   m_PrefabAsset: {fileID: 0}
