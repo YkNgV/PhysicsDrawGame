@@ -13,7 +13,7 @@ public class NewAchievementManager : MonoBehaviour
 
     [Header("Star Requirement")]
     //public Text lineCountText;
-    public int oneStar;
+    public int oneStar; //completely useless cus clear = 1 star anyways 
     public int twoStar;
     public int threeStar;
 

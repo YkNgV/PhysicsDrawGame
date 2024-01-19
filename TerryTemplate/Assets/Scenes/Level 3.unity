@@ -452,6 +452,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4f51e87d1793974baa980fda506b84a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1996170631 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 149059137422771145, guid: a7e351469d7acff4488235c1be0e8c96,
+    type: 3}
+  m_PrefabInstance: {fileID: 6278974943702205094}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2084968459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -529,6 +535,11 @@ PrefabInstance:
       propertyPath: drawCountText
       value: 
       objectReference: {fileID: 6278974943702205097}
+    - target: {fileID: 7371543129572351697, guid: 874b6c2a58438dc44b1803e1663fd01d,
+        type: 3}
+      propertyPath: nextLvlButton
+      value: 
+      objectReference: {fileID: 1996170631}
     - target: {fileID: 7371543129572351697, guid: 874b6c2a58438dc44b1803e1663fd01d,
         type: 3}
       propertyPath: restartButton
@@ -931,6 +942,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6976377796783524627, guid: a7e351469d7acff4488235c1be0e8c96,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1793820407}
+    - target: {fileID: 6976377796783524627, guid: a7e351469d7acff4488235c1be0e8c96,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NextLvl
+      objectReference: {fileID: 0}
+    - target: {fileID: 6976377796783524627, guid: a7e351469d7acff4488235c1be0e8c96,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: NewLevelManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6976377796783524627, guid: a7e351469d7acff4488235c1be0e8c96,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8527475897805121679, guid: a7e351469d7acff4488235c1be0e8c96,
         type: 3}
