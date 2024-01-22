@@ -78,6 +78,9 @@ public class DrawingManager : MonoBehaviour {
 
 		// Define line material
 		pathLineRenderer.material = new Material(Shader.Find("Particles/Standard Unlit"));
+
+		pathLineRenderer.material = new Material(Shader.Find("Sprites/Diffuse")); //places line in foreground
+
 		pathLineRenderer.startColor = colorStart;
 		pathLineRenderer.endColor = colorEnd;
 		posCount = 0;
